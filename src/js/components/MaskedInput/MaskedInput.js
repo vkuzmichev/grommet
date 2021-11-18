@@ -193,6 +193,7 @@ const MaskedInput = forwardRef(
 
     const [valueParts, setValueParts] = useState(parseValue(mask, value));
     useEffect(() => {
+      console.log('value:', value)
       setValueParts(parseValue(mask, value));
     }, [mask, value]);
 
